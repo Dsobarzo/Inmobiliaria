@@ -10,4 +10,5 @@ def decrypt(password:str):
     f = Fernet(b'FINEHtwMUOxgvyYM9fOvpXcQHYDDZKb3-NkPWTrZN5g=')
     b_password = bytes(password, 'ascii')
     b_password_decrypt = f.decrypt(b_password)
+    #cimetario
     return b_password_decrypt.decode('ascii')
